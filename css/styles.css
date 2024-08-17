@@ -1,0 +1,88 @@
+/* Asegura que el body y el html ocupen toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal que abarca todo menos el footer */
+.container {
+    flex: 1;
+}
+
+header {
+    background-color: #000;
+    color: #fff; 
+    padding: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; 
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; 
+}
+
+.logo-img {
+    max-width: 100px; 
+    height: auto;
+}
+
+.product-image {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+/* Cambiar la imagen al pasar el cursor */
+.product-image:hover {
+    content: attr(data-hover);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+}

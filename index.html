@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Zona Fútbol GT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<body class="blue lighten-5">
-
-    <header class="center-align blue darken-3 white-text py-3">
-        <img src="./images/log.png" alt="Logo" class="logo">
-        <h3>Desarrollo Web</h3>
+<body>
+    <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="images/logo.png" alt="Zona Fútbol GT" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Accesorios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Calzado</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ropa</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ofertas</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <CENTER>
 
-    
-<h1>EJERCICIO MEDIA QUERY</h1>
-</CENTER>
-        <footer class="center-align blue darken-3 white-text py-3" style="width: 100%;">
-            <p>&copy; 2024 - Ludvin Alonzo</p>
-        </footer>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="./images/producto1.jpg" class="card-img-top product-image" data-hover="./images/producto1h.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Predator Elite Laceless FG 'Solar Energy'</h5>
+                        <p class="card-text">Q3,290.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="./images/producto2.jpg" class="card-img-top product-image" data-hover="./images/producto2h.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas X Crazyfast Elite FG 'Energy Citrus'</h5>
+                        <p class="card-text">Q2,790.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="./images/producto3.jpg" class="card-img-top product-image" data-hover="./images/producto3h.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas X Crazyfast Elite FG 'Solar Energy'</h5>
+                        <p class="card-text">Q2,890.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="./images/producto4.jpg" class="card-img-top product-image" data-hover="./images/producto4h.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas X Crazyfast Elite FG Laceless 'Solar Energy'</h5>
+                        <p class="card-text">Q2,990.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="./js/script.js"></script>
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Zona Fútbol GT. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" class="text-white mx-2">Instagram</a> | 
+            <a href="#" class="text-white mx-2">Facebook</a> | 
+            <a href="#" class="text-white mx-2">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
